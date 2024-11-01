@@ -1,0 +1,145 @@
+/*
+Colors:
+    -Palette:
+        -e9c46a -> Main color
+            Tints:
+                #f8edd2
+
+                Shades:
+                #c6bea8
+        - Text color:
+         -E76F51
+            Shades: #743829, #bf6854
+
+
+Font-sizes: 15px, 48px
+
+
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Fredoka', sans-serif;
+    background-color: #f8edd2;
+}
+
+/* Heading styles */
+.header__heading {
+    color: #743829;
+    font-size: 4.8rem;
+    font-weight: 700;
+    letter-spacing: 0.2rem;
+    margin: 4.8rem 0;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+/* Main styles */
+.main {
+    display: flex;
+
+    align-items: center;
+    flex-direction: column;
+    gap: 4.8rem;
+}
+
+/* User input section */
+.main__user-input {
+    display: flex;
+    font-size: 1.5rem;
+    gap: 5rem;
+}
+
+/* Buttons style */
+.feature-button {
+    background-color: #d4745d;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px 1px rgb(0, 0, 0, 0.2);
+    color: #EEE;
+    cursor: pointer;
+    font-weight: 700;
+    letter-spacing: 0.1rem;
+    padding: 1.2rem 2.4rem;
+    text-transform: uppercase;
+    transition: all 0.2s;
+}
+
+.feature-button:hover {
+    background-color: #bf6854;
+}
+
+.input-breed-box {
+    display: flex;
+    gap: 1rem;
+}
+
+.input-breed-text {
+    position: relative;
+}
+
+.input-breed-label {
+    color: #743829;
+    position: absolute;
+    left: 0;
+    text-transform: uppercase;
+    top: -2.5rem;
+}
+
+.input-breed {
+    background-color: #c6bea8;
+
+    background-image:
+            linear-gradient(to left, #743829, #743829),
+            linear-gradient(to right, #743829, #743829);
+    background-position: 50% 95%, 50% 95%;
+    background-size: 0 2px, 0 2px;
+    background-repeat: no-repeat;
+
+    border: none;
+    border-radius: 5px;
+    color: #743829;
+    font-weight: 700;
+    height: 100%;
+    outline: none;
+    padding: 1.2rem;
+    text-align: center;
+    width: 30rem;
+    transition: background-size 0.5s;
+}
+
+.input-breed:focus {
+    background-size: 100% 2px, 100% 2px;
+}
+
+/* Content styles */
+.content {
+    min-height: 60rem;
+    width: 100rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Dog images styles */
+.content__img-dog {
+    width: 100%;
+}
+
+/* Content text */
+
+.content__text {
+    font-size: 2rem;
+}
+.content__text--error-message {
+    font-size: 5rem;
+}

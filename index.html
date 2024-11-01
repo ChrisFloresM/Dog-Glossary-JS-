@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Dog Glossary</title>
+		<!-- Fonts-->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+
+		<!--Styles-->
+		<link rel="stylesheet" href="styles/styles.css" type="text/css">
+	</head>
+	<body>
+		<header class="header">
+			<h1 class="header__heading">Dog Glossary</h1>
+		</header>
+		<main class="main"><!-- Input part -->
+			<div class="main__user-input">
+				<button class="feature-button" id="button-random-dog" type="button">Show Random Dog</button>
+
+				<div class="input-breed-box">
+					<div class="input-breed-text">
+						<label class="input-breed-label" for="input-breed">Breed: </label>
+						<input class="input-breed" id="input-breed" type="text" placeholder="Enter a breed">
+					</div>
+					<button class="feature-button" id="button-show-breed" type="button">Show Breed</button>
+				</div>
+
+				<button class="feature-button" id="button-show-sub-breed" type="button">Show Sub-Breed</button>
+				<button class="feature-button" id="button-show-all" type="button">Show All Breeds</button>
+			</div>
+			<!--Display container -->
+			<div id="content" class="content">
+			</div>
+		</main>
+
+		<!-- Script -->
+		<script src="script.js"></script>
+	</body>
+</html>
